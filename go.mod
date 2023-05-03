@@ -1,4 +1,4 @@
-module github/simonmittag/punycoder
+module github.com/simonmittag/punycoder
 
 go 1.20
 

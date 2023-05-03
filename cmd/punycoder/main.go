@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github/simonmittag/punycoder"
+	"github.com/simonmittag/punycoder"
 	"os"
 )
 
@@ -11,7 +11,10 @@ func main() {
 		al := punycoder.EncodeAscii(os.Args[1])
 		fmt.Printf(" %v\n", al)
 	} else {
-		fmt.Println("usage: punycoder a😀.com")
+		var pl string
+		fmt.Scanf("%s", &pl)
+		al := punycoder.EncodeAscii(pl)
+		fmt.Printf(" %v\n", al)
 	}
 }
 
