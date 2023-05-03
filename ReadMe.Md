@@ -10,9 +10,6 @@ punycoder converts international domain names ("idna") to their punycode represe
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-## What's New
-Updated to v0.1.3 to fix checksum error
-
 ## Up and running
 ### Homebrew
 ```
