@@ -6,6 +6,9 @@ punycoder converts international domain names ("idna") to their punycode represe
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
+## What's new
+added goreleaser
+
 ## Up and running
 ### Homebrew
 ```
@@ -26,10 +29,6 @@ punycoder
 λ punycoder d😀main.com
   xn--dmain-z224d.com
 ```
-
-
-
-
 
 ## Contributions
 The punycoder team welcomes all [contributors](https://github.com/simonmittag/punycoder/blob/master/CONTRIBUTING.md). Everyone interacting with the project's codebase, issue trackers, chat rooms and mailing lists
