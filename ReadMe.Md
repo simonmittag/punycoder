@@ -34,7 +34,7 @@ punycoder
 
 ## Examples
 ```
-echo 1❤.ws | punycoder | nslookup
+echo 1❤️.ws | punycoder | nslookup
 Server:		8.8.8.8
 Address:	8.8.8.8#53
 
