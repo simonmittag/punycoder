@@ -32,6 +32,11 @@ punycoder
   xn--dmain-z224d.com
 ```
 
+## Examples
+```
+echo 1❤.ws | punycoder | nslookup
+```
+
 ## Contributions
 The punycoder team welcomes all [contributors](https://github.com/simonmittag/punycoder/blob/master/CONTRIBUTING.md). Everyone interacting with the project's codebase, issue trackers, chat rooms and mailing lists
 is expected to follow the [code of conduct](https://github.com/simonmittag/punycoder/blob/master/CODE_OF_CONDUCT.md)
