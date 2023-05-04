@@ -1,4 +1,6 @@
-punycoder converts international domain names ("idna") to their punycode representations on the commandline
+# punyco😀der 
+
+Converts international domain names ("idna") to their punycode representations on the commandline
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/punycoder.svg?style=shield)](https://circleci.com/gh/simonmittag/punycoder)
 [![Github Issues](https://img.shields.io/github/issues/simonmittag/punycoder)](https://github.com/simonmittag/punycoder/issues)
