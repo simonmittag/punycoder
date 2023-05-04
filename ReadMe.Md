@@ -1,15 +1,25 @@
 # punyc😀der 
-
-Converts international domain names ("idna") to their punycode representations on the commandline
-
 [![Circleci Builds](https://circleci.com/gh/simonmittag/punycoder.svg?style=shield)](https://circleci.com/gh/simonmittag/punycoder)
 [![Github Issues](https://img.shields.io/github/issues/simonmittag/punycoder)](https://github.com/simonmittag/punycoder/issues)
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Version](https://img.shields.io/badge/version-0.0.11-orange)](https://github.com/simonmittag/punycoder)
+
+## TLDR
+Punycoder converts international domain names to their punycode representations on the commandline.
+
+## Longer Version
+IDNA (Internationalized Domain Name in Applications) is a set of standards and protocols used to support non-ASCII 
+characters in domain names. Punycode is a method used in IDNA to encode non-ASCII characters into ASCII characters that 
+can be used in domain names, making them backwards compatible with existing implementations. This is done 
+by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using 
+a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to 
+indicate that it is a Punycode-encoded domain name. For example, the Punycode representation of the Chinese domain 
+name "中国互联网.com" (which means "China Internet" in English) is "xn--fiqs8s2qjod38g.com".
 
 ## What's new
-added goreleaser
+Added goreleaser and made available on homebrew
 
 ## Up and running
 ### Homebrew
