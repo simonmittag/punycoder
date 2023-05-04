@@ -12,11 +12,14 @@ Punycoder converts international domain names to their punycode representations 
 ## Longer Version
 IDNA (Internationalized Domain Name in Applications) is a set of standards and protocols used to support non-ASCII 
 characters in domain names. Punycode is a method used in IDNA to encode non-ASCII characters into ASCII characters that 
-can be used in domain names, making them backwards compatible with existing implementations. This is done 
-by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using 
+can be used in domain names, making them backwards compatible with existing implementations. 
+
+This is done by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using 
 a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to 
-indicate that it is a Punycode-encoded domain name. For example, the Punycode representation of the Chinese domain 
-name "中国互联网.com" (which means "China Internet" in English) is "xn--fiqs8s2qjod38g.com".
+indicate that it is a Punycode-encoded domain name. 
+
+For example, the Punycode representation of a legal Chinese domain 
+name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
 
 ## What's new
 Added goreleaser and made available on homebrew
@@ -38,11 +41,13 @@ punycoder
 
 ## Usage
 ```
-λ punycoder d😀main.com
-  xn--dmain-z224d.com
+λ punycoder 中国互联网.com
+  xn--fiqs8s2qjod38g.com
 ```
 
 ## Examples
+
+Use punycoder with bash pipes reading from stdin
 ```
 echo 1❤️.ws | punycoder | nslookup
 Server:		8.8.8.8
