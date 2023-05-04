@@ -1,4 +1,4 @@
-# punyco😀der 
+# punyc😀der 
 
 Converts international domain names ("idna") to their punycode representations on the commandline
 
