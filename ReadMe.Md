@@ -35,6 +35,12 @@ punycoder
 ## Examples
 ```
 echo 1❤.ws | punycoder | nslookup
+Server:		8.8.8.8
+Address:	8.8.8.8#53
+
+Non-authoritative answer:
+Name:	xn--1-7iqv272g.ws
+Address: 64.70.19.203
 ```
 
 ## Contributions
