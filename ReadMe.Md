@@ -4,7 +4,7 @@
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-0.0.11-orange)](https://github.com/simonmittag/punycoder)
+[![Version](https://img.shields.io/badge/version-0.1.0-orange)](https://github.com/simonmittag/punycoder)
 
 ## TLDR
 Punycoder converts international domain names to their punycode representations on the commandline.
@@ -22,6 +22,9 @@ For example, the Punycode representation of a legal Chinese domain
 name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
 
 ## What's new
+### v0.1.0 (05/05/23)
+* upgrade to go 1.20
+
 ### v0.0.11 (04/05/23)
 * added goreleaser and made available on homebrew
 
