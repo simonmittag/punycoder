@@ -22,7 +22,8 @@ For example, the Punycode representation of a legal Chinese domain
 name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
 
 ## What's new
-Added goreleaser and made available on homebrew
+### v0.0.11 (04/05/23)
+* added goreleaser and made available on homebrew
 
 ## Up and running
 ### Homebrew
