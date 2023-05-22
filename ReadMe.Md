@@ -22,6 +22,9 @@ For example, the Punycode representation of a legal Chinese domain
 name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
 
 ## What's new
+### v0.2.0 (22/05/23)
+* support unicode encoding of punicode
+
 ### v0.1.0 (05/05/23)
 * upgrade to go 1.20
 
@@ -45,8 +48,10 @@ punycoder
 
 ## Usage
 ```
-λ punycoder 中国互联网.com
-  xn--fiqs8s2qjod38g.com
+λ Usage: punycoder host | [-u] host | [-v] | [-h]
+  -h    print usage
+  -u    convert to unicode
+  -v    print punycoder version
 ```
 
 ## Examples

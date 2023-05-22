@@ -12,29 +12,32 @@ import (
 
 func main() {
 	flag.Usage = punycoderUsage
-	modeAscii := flag.Bool("a", false, "convert to ascii")
+	modeAscii := true
 	modeUnicode := flag.Bool("u", false, "convert to unicode")
+	if *modeUnicode == true {
+		modeAscii = false
+	}
 	modeVersion := flag.Bool("v", false, "print punycoder version")
 	modeUsage := flag.Bool("h", false, "print usage")
 	flag.Parse()
 
-	host := parseArgs(flag.Args())
-
 	if *modeVersion {
 		printVersion()
-	} else if *modeAscii {
-		fmt.Println(punycoder.EncodeAscii(host))
-	} else if *modeUnicode {
-		fmt.Println(punycoder.EncodeUnicode(host))
 	} else if *modeUsage {
 		punycoderUsage()
+	} else if *modeUnicode {
+		host := parseHost(flag.Args())
+		fmt.Println(punycoder.EncodeUnicode(host))
+	} else if modeAscii {
+		host := parseHost(flag.Args())
+		fmt.Println(punycoder.EncodeAscii(host))
 	} else {
 		punycoderUsage()
 	}
 }
 
 func punycoderUsage() {
-	fmt.Fprintf(os.Stdout, "Usage: punycoder [-a] host | [-u] host | [-v] | [-h]\n")
+	fmt.Fprintf(os.Stdout, "Usage: punycoder host | [-u] host | [-v] | [-h]\n")
 	flag.PrintDefaults()
 }
 
@@ -42,11 +45,12 @@ func printVersion() {
 	fmt.Printf("punycoder[%s]\n", punycoder.Version)
 }
 
-func parseArgs(args []string) string {
+func parseHost(args []string) string {
+	var host = ""
 	if len(args) >= 1 {
-		host := args[0] //because of Ipv6
-		return host
+		host = args[0] //because of Ipv6
 	} else {
-		return ""
+		fmt.Scanf("%s", &host)
 	}
+	return host
 }
