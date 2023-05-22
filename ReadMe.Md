@@ -18,8 +18,8 @@ This is done by first converting the non-ASCII characters into their Unicode cod
 a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to 
 indicate that it is a Punycode-encoded domain name. 
 
-For example, the Punycode representation of a legal Chinese domain 
-name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
+For example, the Punycode representation of a legal domain 
+name `1❤️.ws`  is `xn--1-7iqv272g.ws`.
 
 ## What's new
 ### v0.2.0 (22/05/23)
