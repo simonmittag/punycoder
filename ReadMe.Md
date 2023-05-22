@@ -23,7 +23,7 @@ name `中国互联网.com`  is `xn--fiqs8s2qjod38g.com`.
 
 ## What's new
 ### v0.2.0 (22/05/23)
-* support unicode encoding of punicode
+* support unicode encoding of punycode
 
 ### v0.1.0 (05/05/23)
 * upgrade to go 1.20
@@ -65,6 +65,11 @@ Address:	8.8.8.8#53
 Non-authoritative answer:
 Name:	xn--1-7iqv272g.ws
 Address: 64.70.19.203
+```
+
+```
+echo xn--1-7iqv272g.ws | punycoder -u 
+1❤️.ws
 ```
 
 ## Contributions
