@@ -4,7 +4,7 @@ import (
 	"golang.org/x/net/idna"
 )
 
-const Version string = "v0.2.0"
+const Version string = "v0.2.1"
 
 func EncodeAscii(p string) string {
 	al, _ := idna.ToASCII(p)

@@ -22,6 +22,9 @@ For example, the Punycode representation of a legal domain
 name `1❤️.ws`  is `xn--1-7iqv272g.ws`.
 
 ## What's new
+### v0.2.1 (25/05/23)
+* refactored cli args.
+
 ### v0.2.0 (22/05/23)
 * support unicode encoding of punycode
 
