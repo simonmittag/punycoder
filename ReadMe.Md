@@ -31,9 +31,6 @@ name `1❤️.ws`  is `xn--1-7iqv272g.ws`.
 ### v0.1.0 (05/05/23)
 * upgrade to go 1.20
 
-### v0.0.11 (04/05/23)
-* added goreleaser and made available on homebrew
-
 ## Up and running
 ### Homebrew
 ```
