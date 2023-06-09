@@ -1,11 +1,10 @@
 # punyc😀der 
 
-Punycoder converts international domain names to their punycode representations on the commandline. This is done by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
+Punycoder converts international domain names to their punycode representations on the commandline. This is done by 
+first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
 a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to
-indicate that it is a Punycode-encoded domain name.
+indicate that it is a Punycode-encoded domain name, making it compatible with [RFC1035](https://www.rfc-editor.org/rfc/rfc1035.txt)
 
-For example, the Punycode representation of a legal domain
-name `1❤️.ws`  is `xn--1-7iqv272g.ws`.
 
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/punycoder.svg?style=shield)](https://circleci.com/gh/simonmittag/punycoder)
