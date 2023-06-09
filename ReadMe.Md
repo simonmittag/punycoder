@@ -1,12 +1,6 @@
 # punyc😀der 
 
-Punycoder converts international domain names to their punycode representations on the commandline.
-
-IDNA (Internationalized Domain Name in Applications) is a set of standards and protocols used to support non-ASCII
-characters in domain names. Punycode is a method used in IDNA to encode non-ASCII characters into ASCII characters that
-can be used in domain names, making them backwards compatible with existing implementations.
-
-This is done by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
+Punycoder converts international domain names to their punycode representations on the commandline. This is done by first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
 a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to
 indicate that it is a Punycode-encoded domain name.
 
