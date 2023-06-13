@@ -1,4 +1,4 @@
-# punyc😀der 
+![Punycoder Logo](punycoder_80.png)
 
 Punycoder converts international domain names to their punycode representations on the commandline. This is done by 
 first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
@@ -12,7 +12,7 @@ indicate that it is a Punycode-encoded domain name, making it compatible with [R
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-0.2.0-orange)](https://github.com/simonmittag/punycoder)
+[![Version](https://img.shields.io/badge/version-0.2.1-orange)](https://github.com/simonmittag/punycoder)
 
 ## What's new
 ### v0.2.1 (25/05/23)
