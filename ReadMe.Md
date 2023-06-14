@@ -1,11 +1,10 @@
 ![Punycoder Logo](punycoder_80.png)
+Punycoder converts international domain names to their ([RFC1035](https://www.rfc-editor.org/rfc/rfc1035.txt) compatible)
+punycode representations on the commandline, so you can use them with `nslookup` or `dig`.
 
-Punycoder converts international domain names to their punycode representations on the commandline. This is done by 
-first converting the non-ASCII characters into their Unicode code points, and then encoding those code points using
-a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the characters "xn--" to
-indicate that it is a Punycode-encoded domain name, making it compatible with [RFC1035](https://www.rfc-editor.org/rfc/rfc1035.txt).
-
-
+This is done by first converting the non-ASCII characters into their Unicode code points, and then encoding those code 
+points using a special base-36 encoding scheme. The resulting string of ASCII characters is prefixed with the 
+characters "xn--" to indicate that it is a Punycode-encoded domain name.
 
 [![Circleci Builds](https://circleci.com/gh/simonmittag/punycoder.svg?style=shield)](https://circleci.com/gh/simonmittag/punycoder)
 [![Github Issues](https://img.shields.io/github/issues/simonmittag/punycoder)](https://github.com/simonmittag/punycoder/issues)
