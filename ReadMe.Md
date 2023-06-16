@@ -9,6 +9,8 @@ characters "xn--" to indicate that it is a Punycode-encoded domain name.
 [![Circleci Builds](https://circleci.com/gh/simonmittag/punycoder.svg?style=shield)](https://circleci.com/gh/simonmittag/punycoder)
 [![Github Issues](https://img.shields.io/github/issues/simonmittag/punycoder)](https://github.com/simonmittag/punycoder/issues)
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)  
+[![CodeClimate Maintainability](https://api.codeclimate.com/v1/badges/43f4fcf279d9d0ea72a6/maintainability)](https://codeclimate.com/github/simonmittag/pwt/maintainability)
+[![CodeClimate Test Coverage](https://api.codeclimate.com/v1/badges/43f4fcf279d9d0ea72a6/test_coverage)](https://codeclimate.com/github/simonmittag/pwt/test_coverage)
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Version](https://img.shields.io/badge/version-0.2.2-orange)](https://github.com/simonmittag/punycoder)
