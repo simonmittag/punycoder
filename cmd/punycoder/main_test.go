@@ -69,6 +69,7 @@ func runT(tt struct {
 		outC <- buf.String()
 	}()
 
+	os.Args = []string{"punycoder"}
 	os.Args = append(os.Args, tt.in)
 	main()
 
@@ -80,5 +81,7 @@ func runT(tt struct {
 		return !unicode.IsGraphic(r)
 	})
 
-	//
+	if out != tt.out {
+		t.Errorf("not properly transcoded, got %v, want %v", out, tt.out)
+	}
 }
