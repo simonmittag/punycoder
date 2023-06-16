@@ -43,6 +43,7 @@ punycoder
 
 ## Usage
 ```
+🌐 punycoder[v0.2.2]
 λ Usage: punycoder host | [-u] host | [-v] | [-h]
   -h    print usage
   -u    convert to unicode
