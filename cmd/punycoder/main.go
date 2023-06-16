@@ -47,7 +47,7 @@ func printUsage() {
 }
 
 func printVersion() {
-	fmt.Printf("punycoder[%s]\n", punycoder.Version)
+	fmt.Printf("🌐 punycoder[%s]\n", punycoder.Version)
 }
 
 func parseHost(args []string) string {
