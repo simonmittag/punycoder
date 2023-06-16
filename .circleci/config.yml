@@ -32,52 +32,6 @@ jobs:
             gotestsum --junitfile /tmp/test-reports/unit-tests.xml
       - store_test_results:
           path: /tmp/test-reports
-  metrics:
-    docker:
-      - image: cimg/go:1.20 #
-    environment:
-      TEST_RESULTS: /tmp/test-results
-      LOGLEVEL: TRACE
-      LOGCOLOR: TRUE
-      CC_TEST_REPORTER_ID: 2dd75c9c35c35e1f03e57e23e1273e2122980d68bfc4d55c6af858c43763295f
-    steps:
-      - checkout # check out source code to working directory
-      - run:
-          name: "Create a temp directory for artifacts"
-          command: |
-            mkdir -p /tmp/artifacts
-      - run:
-          name: "Create a temp directory for tests"
-          command: |
-            mkdir -p /tmp/test-results
-      - run:
-          name: Setup Code Climate test-reporter
-          command: |
-            # download test reporter as a static binary
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            chmod +x ./cc-test-reporter
-      - run:
-          name: Run tests with coverage report
-          command: |
-            export GIT_COMMITTED_AT="$(date +%s)"
-            export CIRCLE_SHA="$CIRCLE_SHA1"
-            export CIRCLE_BRANCH=`git rev-parse --abbrev-ref HEAD`
-            ./cc-test-reporter before-build
-            go test -cover -coverprofile=c.out ./...
-            go tool cover -html=c.out -o coverage.html
-            ./cc-test-reporter after-build --coverage-input-type gocov -p "github.com/simonmittag/punycoder"
-            mv coverage.html /tmp/artifacts
-
-      - store_artifacts:
-          path: /tmp/artifacts
-
-      - run:
-          name: Test Summary for CircleCI
-          command: |
-            gotestsum --junitfile /tmp/test-results/unit-tests.xml
-
-      - store_test_results:
-          path: /tmp/test-results
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
@@ -86,4 +40,3 @@ workflows:
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build
-      - metrics

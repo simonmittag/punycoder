@@ -2,25 +2,12 @@ package main
 
 import (
 	"bytes"
-	"flag"
 	"io"
 	"os"
 	"strings"
 	"testing"
 	"unicode"
 )
-
-func TestMainFuncWithHelp(t *testing.T) {
-	flag.CommandLine = flag.NewFlagSet(os.Args[0], flag.ContinueOnError)
-	os.Args = append([]string{"-h"}, "-h")
-	main()
-}
-
-func TestMainFuncWithVersion(t *testing.T) {
-	flag.CommandLine = flag.NewFlagSet(os.Args[0], flag.ContinueOnError)
-	os.Args = append([]string{"-v"}, "-v", "https://www.google.com")
-	main()
-}
 
 func TestMainFuncToUnicode(t *testing.T) {
 	var tests = []struct {

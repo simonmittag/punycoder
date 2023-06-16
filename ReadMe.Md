@@ -1,5 +1,4 @@
 ![Punycoder Logo](punycoder_80.png)
-
 Punycoder converts international domain names to their ([RFC1035](https://www.rfc-editor.org/rfc/rfc1035.txt) compatible)
 punycode representations on the commandline, so you can use them with `nslookup` or `dig`.
 
@@ -12,7 +11,7 @@ characters "xn--" to indicate that it is a Punycode-encoded domain name.
 [![Github Activity](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)](https://img.shields.io/github/commit-activity/m/simonmittag/punycoder)  
 [![Go Version](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)](https://img.shields.io/github/go-mod/go-version/simonmittag/punycoder)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Version](https://img.shields.io/badge/version-0.2.2-orange)](https://github.com/simonmittag/punycoder)
+[![Version](https://img.shields.io/badge/version-0.2.1-orange)](https://github.com/simonmittag/punycoder)
 
 ## What's new
 ### v0.2.2 (16/06/23)
