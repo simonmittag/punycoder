@@ -24,14 +24,21 @@ func TestMainFuncWithVersion(t *testing.T) {
 
 func TestMainFunc(t *testing.T) {
 	var tests = []struct {
-		name string
-		in   string
-		out  string
+		name   string
+		in     string
+		out    string
+		method string
 	}{
 		{
-			name: "chinese to ascii",
-			in:   "中国互联网.com",
-			out:  "xn--fiq8iy4u6s7b8bb.com",
+			name:   "chinese to ascii",
+			in:     "中国互联网.com",
+			out:    "xn--fiq8iy4u6s7b8bb.com",
+			method: "a",
+		}, {
+			name:   "ascii to chinese",
+			in:     "xn--fiq8iy4u6s7b8bb.com",
+			out:    "中国互联网.com",
+			method: "u",
 		},
 	}
 
@@ -51,9 +58,10 @@ func TestPrintVersion(t *testing.T) {
 }
 
 func runT(tt struct {
-	name string
-	in   string
-	out  string
+	name   string
+	in     string
+	out    string
+	method string
 }, t *testing.T) {
 	flag.CommandLine = flag.NewFlagSet(os.Args[0], flag.ContinueOnError)
 
@@ -70,6 +78,9 @@ func runT(tt struct {
 	}()
 
 	os.Args = []string{"punycoder"}
+	if tt.method == "u" {
+		os.Args = append(os.Args, "-u")
+	}
 	os.Args = append(os.Args, tt.in)
 	main()
 
