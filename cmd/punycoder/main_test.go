@@ -31,6 +31,14 @@ func TestMainFuncToUnicode(t *testing.T) {
 	}
 }
 
+func TestPrintUsage(t *testing.T) {
+	printUsage()
+}
+
+func TestPrintVersion(t *testing.T) {
+	printVersion()
+}
+
 func runT(tt struct {
 	name   string
 	in     string
