@@ -11,7 +11,6 @@ import (
 )
 
 func main() {
-	flag.Usage = printUsage
 	modeAscii := true
 	modeUnicode := flag.Bool("u", false, "convert to unicode")
 	if *modeUnicode == true {
@@ -19,6 +18,7 @@ func main() {
 	}
 	modeVersion := flag.Bool("v", false, "print punycoder version")
 	modeUsage := flag.Bool("h", false, "print usage")
+	flag.Usage = printUsage
 	err := parseFlags()
 
 	if err != nil {
