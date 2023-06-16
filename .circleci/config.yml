@@ -34,7 +34,7 @@ jobs:
           path: /tmp/test-reports
   metrics:
     docker:
-      - image: cimg/go:1.20 #
+      - image: cimg/go:1.20
     environment:
       TEST_RESULTS: /tmp/test-results
       LOGLEVEL: TRACE
