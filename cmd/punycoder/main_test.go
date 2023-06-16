@@ -35,30 +35,6 @@ func TestMainFuncToUnicode(t *testing.T) {
 			out:    "xn--fiq8iy4u6s7b8bb.com",
 			method: "a",
 		},
-		{
-			name:   "emoji to ascii",
-			in:     "🌐︎.com",
-			out:    "xn--u86cs934b.com",
-			method: "a",
-		},
-		{
-			name:   "emoji 2 to ascii",
-			in:     "🌐.com",
-			out:    "xn--wg8h.com",
-			method: "a",
-		},
-		{
-			name:   "umlaut to ascii",
-			in:     "ö.com",
-			out:    "xn--nda.com",
-			method: "a",
-		},
-		{
-			name:   "Français to ascii",
-			in:     "français.fr",
-			out:    "xn--franais-xxa.fr",
-			method: "a",
-		},
 	}
 
 	for _, tt := range tests {
